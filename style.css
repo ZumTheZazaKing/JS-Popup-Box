@@ -1,0 +1,67 @@
+body{
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: burlywood;
+}
+
+#popup{
+    width: 100%;
+    height: 100%;
+    background-color: rgb(0, 0, 0);
+    background-color: rgba(0, 0, 0, 0.4);
+    position: fixed;
+    left: 0;
+    top: 0;
+    overflow: auto;
+    z-index: 1;
+}
+
+@keyframes a{
+
+    from{transform: scale(.2);}
+    to{transform: scale(1);}
+
+}
+
+#popup-content{
+    width: 80%;
+    background-color: #fff;
+    margin: 15% auto;
+    padding: 20px;
+    animation-name: a;
+    animation-duration: .2s;
+    transition: .2s ease-in;
+}
+
+span{
+    color: #aaaaaa;
+    font-weight: bold;
+    float: right;
+    font-size: 28px;
+    cursor: pointer;
+}
+
+span:hover,
+span:focus{
+    color: black;
+    text-decoration: none;
+}
+
+#popup-text{
+    font-size: 36px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.hide{
+    display: none;
+}
+
+#text{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 36px;
+    color: rgb(160, 116, 60);
+    text-align: center;
+}

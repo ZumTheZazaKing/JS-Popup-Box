@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Popup Box</title>
+</head>
+<body onload="displayPopup()">
+
+    <p id="text">
+        Wait for a few seconds for the Popup to appear!<br>
+        Once it does, reload the page to see it again
+    </p>
+
+    <div id="popup" class="hide">
+        <div id="popup-content">
+            <span onclick="closeModal()">&times;</span>
+            <p id="popup-text">This is a Popup!</p>
+        </div>
+    </div>
+    
+    <script defer src="script.js"></script>
+</body>
+</html>
